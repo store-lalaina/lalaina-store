@@ -1,0 +1,291 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Fonts/BrownLLWeb-Regular.woff);
+}
+
+* {
+    font-family: myFirstFont;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+
+    background-color: #F1F1F1;
+    width: 100%;
+    height: 100px;
+    top: 0px;
+
+    display: flex;
+
+    transition: height .5s;
+
+    z-index: 2;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 80px;
+}
+
+header > div {
+
+    width: 50%;
+    height: 100%;
+
+}
+
+header div {
+
+    display: flex;
+    align-items: center;
+
+}
+
+#header_left {
+    justify-content: left;
+    margin-left: 20%;
+}
+
+#div_logo {
+    height: 100%;
+}
+
+#a_home {
+    height: 70%;
+}
+
+#header_img_logo {
+    height: 100%;
+}
+
+#header_right {
+    justify-content: flex-end;
+    gap: 100px;
+    margin-right: 20%;
+}
+
+#nav_menu {
+    display: flex;
+    gap: 50px;
+    font-size: 120%;
+}
+
+.menu_a {
+    text-decoration: none;
+    color: black;
+    padding: 1px 0;
+    border-bottom: solid 1px transparent;
+    transition: border-bottom-color .3s;
+}
+
+.menu_a:hover {
+    border-bottom-color: black;
+}
+
+#div_fonction {
+    display: flex;
+    height: 100%;
+    gap: 30px;
+}
+
+.a_fonction {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.img_fonction {
+    height: 30%;
+}
+
+#a_basket {
+    gap: 5px;
+}
+
+#count_basket {
+    font-size: 120%;
+}
+
+#count_basket_sidebar {
+    font-size: 70%;
+}
+
+#a_sidebar {
+    display: none;
+}
+
+.navbar_hide {
+    display: none;
+}
+
+.navbar_show {
+    display: none;
+}
+
+
+#div_close {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: right;
+}
+
+#img_close {
+    height: 40%;
+    margin-right: 20px;
+}
+
+hr {
+    width: 50%;
+    border: none;
+    border-top: 1px solid black;
+}
+
+#ul_navbar {
+    position: relative;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+    font-size: 150%;
+}
+
+.nav_item {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[class="nav_item"] {
+    padding: 1px 0;
+    border-bottom: solid 1px transparent;
+    transition: border-bottom-color .3s;
+}
+
+[class="nav_item"]:hover {
+    border-bottom-color: black;
+}
+
+.nav_item_logo {
+    height: 40px;
+}
+
+.nav_item_fonc {
+    height: 30px;
+    display: flex;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+
+.nav_item_fonc a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav_item img {
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    #header_right {
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 20%;
+    }
+
+    #nav_menu {
+        display: flex;
+        gap: 20px;
+        font-size: 120%;
+    }
+
+    #div_fonction {
+        display: flex;
+        height: 100%;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    #header_left {
+        justify-content: left;
+        margin-left: 5%;
+    }
+
+    #header_right {
+        justify-content: flex-end;
+        gap: 20px;
+        margin-right: 20%;
+    }
+
+    #nav_menu {
+        display: flex;
+        gap: 20px;
+        font-size: 120%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    main {
+        margin-top: 10px;
+    }
+
+    #header_right {
+        margin-right: 5%;
+    }
+
+    #div_menu {
+        display: none;
+    }
+
+    #div_fonction > a:not(#a_sidebar) {
+        display: none;
+    }
+
+    #a_sidebar {
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .navbar_show {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /*background-color: #F1F1F1;
+        filter: grayscale(100%) opacity(0.95);*/
+        background-color: #F1F1F1;
+    }
+
+}

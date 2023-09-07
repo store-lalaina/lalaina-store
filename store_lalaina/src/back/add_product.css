@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+form {
+    width: 50%;
+
+}
+
+form label {
+    display: block;
+}
+
+form input[type=number], form input[type=text], form input[type=submit], form select, form input[type=file] {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+form input[type=email], form input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form label {
+    font-size: 120%;
+}
+
+fieldset {
+    display: flex;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#input_connexion {
+    padding: 5px;
+    margin-top: 25px;
+    font-size: 120%;
+}
+
+#button_add_img {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+#button_add_img:hover {
+    cursor: pointer;
+}
+
+.span_error {
+    color: red;
+    display: block;
+}
+
+.span_validate {
+    color: green;
+}
+

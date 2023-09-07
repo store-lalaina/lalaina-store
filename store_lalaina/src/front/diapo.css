@@ -1,0 +1,144 @@
+main {
+    margin-top: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.diapo_section {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content_diapo_section {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.div_fleche {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_fleche > img:hover {
+    cursor: pointer;
+}
+
+
+.div_fleche > img {
+    width: 100%;
+}
+
+.content_diapo {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    /*gap: 20px;*/
+}
+
+.a_content_diapo {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: left 1s;
+}
+
+.product {
+    background-color: #EBEBEB;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.div_img_product {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_product_diapo {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.img_product_diapo:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.info_product {
+    height: 20%;
+    background-color: #CBCBCB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.product_title, .product_price {
+
+    margin: 0;
+
+}
+
+.product_title {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+@media screen and (max-width: 690px) {
+
+    .content_diapo_section {
+        width: 350px;
+    }
+
+    .content_diapo {
+        width: 250px;
+        gap: 0;
+    }
+
+    .a_content_diapo {
+        width: 250px;
+        /*display: none;*/
+    }
+
+    .a_content_diapo:first-child {
+        display: flex;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 346px){
+
+    section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+
+    section a {
+        width: 100%;
+    }
+
+}

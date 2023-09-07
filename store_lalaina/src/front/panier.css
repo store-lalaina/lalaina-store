@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#section_basket_empty {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+#a_back_home {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    font-size: 160%;
+    color: #EBEBEB;
+    text-align: center;
+    text-decoration: none;
+}
+
+#section_basket_full {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 90%;
+}
+
+#div_products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.div_product_basket {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.div_img_product_basket {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.img_product_basket {
+    height: 100%;
+    transition: transform .5s;
+}
+
+.img_product_basket:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.div_info_product_basket {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.div_remove_product_basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_remove_product {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.button_remove_product:hover {
+    cursor: pointer;
+}
+
+#div_bill {
+    width: 40%;
+}
+
+#submit_commande {
+    width: 100%;
+    padding: 0;
+    border: none;
+    background-color: black;
+    font-size: 160%;
+    color: #EBEBEB;
+}
+
+@media screen and (max-width: 1150px){
+
+    main {
+        margin-top: 10px;
+    }
+
+    #section_basket_full {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    #div_bill {
+        width: 100%;
+    }
+
+    .div_basket_product, #div_bill h2 {
+        margin-left: 50px;
+    }
+
+}

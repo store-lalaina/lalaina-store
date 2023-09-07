@@ -1,0 +1,110 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+form {
+    width: 50%;
+
+}
+
+form label {
+    display: block;
+}
+
+form input[type=number], form input[type=text], form input[type=submit], form select, form input[type=file] {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+form input[type=email], form input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form label {
+    font-size: 120%;
+}
+
+fieldset {
+    display: flex;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+#div_imgs_product {
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+.div_img_product {
+    width: 40%;
+}
+
+.div_img {
+    height: 300px;
+    overflow: hidden;
+}
+
+.img_product {
+    width: 100%;
+    transition: transform .5s;
+}
+
+.img_product:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.button_remove_img {
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+    border: none;
+    background-color: black;
+    font-size: 100%;
+    color: #EBEBEB;
+    text-align: center;
+}
+
+.button_remove_img:hover {
+    cursor: pointer;
+}
+
+
+#button_add_img {
+
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border: 1px solid black;
+    width: 100%;
+    height: 30px;
+
+}
+
+#button_add_img:hover {
+    cursor: pointer;
+}
+
+#input_submit {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    font-size: 160%;
+    color: #EBEBEB;
+}

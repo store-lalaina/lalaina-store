@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#form_apercu {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#table_apercu {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table_apercu td, #table_apercu th {
+
+    border: 1px solid black;
+
+}
+
+#table_apercu tr:hover {
+    background-color: green;
+}
+
+#input_submit {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    font-size: 160%;
+    color: #EBEBEB;
+}
+
+#table_apercu a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.span_validate {
+    color: green;
+}

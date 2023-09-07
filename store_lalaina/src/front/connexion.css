@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+form {
+    width: 50%;
+
+}
+
+form label {
+    display: block;
+}
+
+form input[type=email], form input[type=password], form input[type=submit] {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+form input[type=email], form input[type=password] {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form label {
+    font-size: 120%;
+}
+
+#mdp_label {
+    margin-top: 10px;
+}
+
+
+
+#input_connexion {
+    padding: 5px;
+    margin-top: 25px;
+    font-size: 120%;
+}
+
+@media screen and (max-height: 1100px) {
+
+
+
+}
